@@ -1,4 +1,8 @@
-# Habit-Journal-App
+# React + Vite
 
-Overview
-This Habit/Journal app provides a seamless experience for users to set and track their goals while also facilitating easy journaling. With a focus on simplicity and effectiveness, users can add goals and effortlessly monitor their progress. The visual representation of progress aids in understanding areas that require improvement or where no changes are needed.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
