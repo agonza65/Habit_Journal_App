@@ -1,7 +1,7 @@
 //Goal List View
 export const GoalView = () => {
-	return
-		<div>
-			<EditViewOption />
-		</div>
+	return (
+		<option>Goal View Option</option>
+	);
 };
+export default GoalView;

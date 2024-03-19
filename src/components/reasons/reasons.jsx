@@ -1,7 +1,5 @@
 // Reasons component
-
 export const Reasons = () => {
-    report (
-        <div> Reasons </div>
-    )
-}
+    return <div> Reasons </div>
+};
+export default Reasons;

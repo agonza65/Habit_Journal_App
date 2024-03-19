@@ -1,6 +1,7 @@
-//Time of Day Tabs component
-export const TimeOfDayTabs = () => {
+//Time of day component
+export const TimeOfDayTab = () => {
 	return (
-	<div>Time of Days Tabs</div>
+		<tab>Time of Day Tab </tab>
 	);
-};
+}
+export default TimeOfDayTab;

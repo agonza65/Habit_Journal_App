@@ -14,3 +14,4 @@ export const NewJournalPage = () => {
 		</div>
 	); 
 };
+export default NewJournalPage;

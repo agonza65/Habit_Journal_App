@@ -10,5 +10,6 @@ export const ProgressPage = () => {
 			<Reports />
 			<NavigationBar /> 
 		</div>
-	)
-}
+	);
+};
+export default ProgressPage;

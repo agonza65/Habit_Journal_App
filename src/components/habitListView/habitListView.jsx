@@ -2,7 +2,9 @@
 export const HabitListView = () => {
 	return (
 		<div> 
-			<HabitListItem />
+			Habit List Views
 		</div>
 	);
 };
+
+export default HabitListView;

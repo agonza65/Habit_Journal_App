@@ -2,3 +2,4 @@
 export const AddDescription = () => {
 	return <div> Add Description </div>
 };
+export default AddDescription;

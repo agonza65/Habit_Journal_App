@@ -16,3 +16,4 @@ export const NewGoalPage = () => {
 		</div>
 	);
 };
+export default NewGoalPage;

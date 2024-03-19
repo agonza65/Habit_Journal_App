@@ -4,3 +4,5 @@ export const NavigationBar = () =>{
 	<div> Navigation Bar </div>
 	);
 };
+
+export default NavigationBar;

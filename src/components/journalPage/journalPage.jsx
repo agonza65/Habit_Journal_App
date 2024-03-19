@@ -10,5 +10,7 @@ export const JournalPage = () => {
 			<JournalListView />
 			<NewButton />
 		</div>
-	)
-}
+		);
+	};
+
+export default JournalPage;

@@ -2,3 +2,5 @@
 export const NewButton = () => {
 	return <button>  New Button </button>
 };
+
+export default NewButton;

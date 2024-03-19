@@ -8,7 +8,8 @@ export const GoalPage = () => {
 		<div>
 			<Header />
 			<GoalView />
-			<newButton />
+			<NewButton />
 		</div>
 	);
 };
+export default GoalPage;

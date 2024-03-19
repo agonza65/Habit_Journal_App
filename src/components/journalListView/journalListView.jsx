@@ -2,7 +2,8 @@
 export const JournalListView = () => {
 	return (
 		<div>
-			<EditViewOption /> 
+			<option>Journal List View</option>
 		</div>
 	);
 };
+export default JournalListView;
