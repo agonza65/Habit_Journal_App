@@ -1,6 +1,6 @@
 import { Header } from "../header/header";
 import { JournalListView } from "../journalListView/journalListView";
-import { NewButton } from "../newButton/newButton";
+import { Button } from "../Button/Button";
 
 // Journal component
 export const JournalPage = () => {
@@ -8,9 +8,7 @@ export const JournalPage = () => {
 		<div> 
 			<Header />
 			<JournalListView />
-			<NewButton />
+			<Button>
 		</div>
 		);
 	};
-
-export default JournalPage;

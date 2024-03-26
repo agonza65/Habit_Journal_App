@@ -15,5 +15,4 @@ export const NewGoalPage = () => {
 			<Reasons />
 		</div>
 	);
-};
-export default NewGoalPage;
+}

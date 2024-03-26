@@ -4,4 +4,3 @@ export const CalendarWidget = () => {
 		<div> Calendar Widget </div>
 	);
 }
-export default CalendarWidget;

@@ -1,8 +1,6 @@
 //Navigation Bar component
-export const NavigationBar = () =>{
+export const NavigationBar = () => {
 	return (
-	<div> Navigation Bar </div>
+		<div> Navigation Bar </div>
 	);
-};
-
-export default NavigationBar;
+}

@@ -1,8 +1,7 @@
-//Reminder component
-export const Reminder = () => {
-	return (
-		<div> Reminder </div>
-	);
-};
+//Reminder Component - create reminders for goals
 
-export default Reminder;
+export const Reminder = () =>{
+	return (
+		<div> Set Reminders </div>
+	);
+}

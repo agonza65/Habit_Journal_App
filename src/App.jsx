@@ -1,47 +1,35 @@
-<<<<<<< Updated upstream
-import MainPage from "./components/mainPage/mainPage";
-import JournalPage from "./components/journalPage/journalPage";
-import NewJournalPage from "./components/newJournalPage/newJournalPage";
-import GoalPage from "./components/goalPage/goalPage";
-import NewGoalPage from "./components/newGoalPage/newGoalPage";
-import ProgressPage from "./components/progressPage/progressPage";
-=======
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { MainPage } from './components/mainPage/mainPage'
-import { JournalPage } from './components/journal/journalPage'
-import { NewJournal } from './components/createNewJournal/createNewJournal'
-import { Goal } from './components/goal/goal'
-import { CreateNewGoal } from './components/createNewGoal/createNewGoal'
-import { ProgressPage } from './components/progressPage/progressPage'
-
 
 function App() {
   const [count, setCount] = useState(0)
->>>>>>> Stashed changes
 
-function App () {
   return (
-    <div>
-<<<<<<< Updated upstream
-        <MainPage />
-        <JournalPage />
-        <NewJournalPage />
-        <GoalPage />
-        <NewGoalPage />
-        <ProgressPage />
-=======
-      <MainPage />
-      <JournalPage />
-      <NewJournal />
-      <Goal />
-      <CreateNewGoal />
-      <ProgressPage />
->>>>>>> Stashed changes
-    </div>
-  );
-};
+    <>
+      <div>
+        <a href="https://vitejs.dev" target="_blank">
+          <img src={viteLogo} className="logo" alt="Vite logo" />
+        </a>
+        <a href="https://react.dev" target="_blank">
+          <img src={reactLogo} className="logo react" alt="React logo" />
+        </a>
+      </div>
+      <h1>Vite + React</h1>
+      <div className="card">
+        <button onClick={() => setCount((count) => count + 1)}>
+          count is {count}
+        </button>
+        <p>
+          Edit <code>src/App.jsx</code> and save to test HMR
+        </p>
+      </div>
+      <p className="read-the-docs">
+        Click on the Vite and React logos to learn more
+      </p>
+    </>
+  )
+}
 
-export default App;
+export default App

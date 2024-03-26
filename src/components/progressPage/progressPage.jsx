@@ -1,22 +1,16 @@
-import { ProgressTab } from "../progressTab/progressTab";
-import { Reports } from "../reports/reports";
 import { NavigationBar } from "../navigationBar/navigationBar";
-<<<<<<< Updated upstream
+import { Reports } from "../reports/reports";
+import { Tabs } from "../tabs/tabs";
 
-=======
->>>>>>> Stashed changes
-//Progess Page component
+// Progress Page - shows the progess of goals 
 export const ProgressPage = () => {
 	return (
 		<div> 
-			<ProgressTab />
+			<h2> Progress Page that displays report of goals being met</h2>
+			<Tabs />
 			<Reports />
-			<NavigationBar /> 
+			<NavigationBar />
 		</div>
+
 	);
-<<<<<<< Updated upstream
-};
-export default ProgressPage;
-=======
-};
->>>>>>> Stashed changes
+}

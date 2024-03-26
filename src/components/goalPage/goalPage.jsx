@@ -1,6 +1,6 @@
-import { Header } from "../header/header";
+import { Button } from "../Button/Button";
 import { GoalView } from "../goalView/goalView";
-import { NewButton } from "../newButton/newButton";
+import { Header } from "../header/header";
 
 //Goal Page component
 export const GoalPage = () => {
@@ -8,8 +8,7 @@ export const GoalPage = () => {
 		<div>
 			<Header />
 			<GoalView />
-			<NewButton />
+			<Button />
 		</div>
 	);
-};
-export default GoalPage;
+}

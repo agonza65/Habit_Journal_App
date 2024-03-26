@@ -3,7 +3,7 @@ import { Title } from "../title/title";
 import { AddDescription } from "../addDescription/addDescription";
 import { Journaling } from "../journaling/journaling";
 
-//NewJournalPage component
+//NewJournalPage component - create a new journal
 export const NewJournalPage = () => {
 	return ( 
 		<div>
@@ -13,5 +13,4 @@ export const NewJournalPage = () => {
 			<Journaling />	
 		</div>
 	); 
-};
-export default NewJournalPage;
+}

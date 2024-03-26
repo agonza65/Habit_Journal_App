@@ -1,15 +1,6 @@
-<<<<<<< Updated upstream
-//Add Description component
-export const Journaling = () => {
-	return <div> Add thought, insight, and feelings </div>
-};
-export default Journaling;
-=======
-// Journaling about personal thoughts, feelings, insights, etc
-
+// Journaling Component - add any thoughts, ideas, feelings
 export const Journaling = () => {
     return (
-        <div> Journaling </div>        
-    )
+        <div> Add thoughts, feelings, and ideas </div>
+    );
 }
->>>>>>> Stashed changes

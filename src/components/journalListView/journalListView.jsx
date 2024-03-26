@@ -1,9 +1,6 @@
 //Journal List View component
 export const JournalListView = () => {
 	return (
-		<div>
-			<option>Journal List View</option>
-		</div>
+		<div> Journal List View </div>
 	);
-};
-export default JournalListView;
+}
