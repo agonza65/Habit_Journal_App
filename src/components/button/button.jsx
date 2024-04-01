@@ -1,6 +1,7 @@
 // New Button Component
-export const Button = () => {
+export const Button = ({children,onSelect}) => {
+
     return (
-        <button> Button </button>
+        <button onClick={onSelect}> {children}</button>
     );
 }
