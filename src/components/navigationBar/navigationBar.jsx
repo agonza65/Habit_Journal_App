@@ -3,11 +3,6 @@ import { useState } from "react";
 //Navigation Bar component
 export const NavigationBar = ({onPageChange,currentPage}) => {
 
-	/*
-	useState function: const[stateVariable, setStateVariable -function to update] = useState(initialValue)
-	*/
-	
-
 	//Handle Click Function
 	const handleClick = (buttonClicked) => {
 		onPageChange(buttonClicked);
@@ -36,10 +31,6 @@ export const NavigationBar = ({onPageChange,currentPage}) => {
 				>
 					Progress Page
 				</button>
-
-				{/* <Button onSelect = {() => handleSelect("main")}> Main Page </Button>
-				<Button onSelect = {() => handleSelect('Journals or Goals')}> Journals or Goals </Button>
-				<Button onSelect = {() => handleSelect('progress')}> Progress </Button> */}
 			</section>
 		</div>
 	);
