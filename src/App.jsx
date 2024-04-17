@@ -11,25 +11,26 @@ function App() {
   if(currentPage === 'main'){
    return ( 
    <div> 
-      mainPage
       <NavigationBar onPageChange = {setPage} />
+      <MainPage />
     </div>
    );  
   }
+
   if(currentPage === 'goalpage'){
     return ( 
     <div> 
-       <GoalPage />
        <NavigationBar onPageChange = {setPage} />
+       <GoalPage />
      </div>
     );  
    }
-
+   
    if(currentPage === 'journalpage'){
     return ( 
     <div> 
-       <JournalPage />
        <NavigationBar onPageChange = {setPage} />
+       <JournalPage />
      </div>
     );  
    }
@@ -37,11 +38,10 @@ function App() {
    if(currentPage === 'progresspage'){
     return ( 
     <div> 
-       <ProgressPage />
        <NavigationBar onPageChange = {setPage} />
+       <ProgressPage />
      </div>
     );  
    }
- 
 }
 export default App
