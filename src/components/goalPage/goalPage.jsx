@@ -6,9 +6,9 @@ import { Header } from "../header/header";
 export const GoalPage = () => {
 	return (
 		<div>
-			<Header />
-			<GoalView />
-			<Button />
+			<header> List of Goals</header>
+				<GoalView />
+				<Button />
 		</div>
 	);
 }

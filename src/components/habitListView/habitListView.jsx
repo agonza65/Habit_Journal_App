@@ -1,15 +1,9 @@
 // Habit List View component
+import { MainTable } from "../mainTable/mainTable";
 export const HabitListView = () => {
 	return (
 		<div> 
-
-			<h2>Habit List Views</h2>
-			
-			<l>
-			Habit 1
-			Habit 2
-			habit 3
-			</l>
+			<MainTable />
 		</div>
 	);
 }

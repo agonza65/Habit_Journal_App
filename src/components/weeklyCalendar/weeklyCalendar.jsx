@@ -17,7 +17,7 @@ export const WeeklyCalendar = () => {
 
   return (
     <div>
-      <h2>Weekly Calendar</h2>
+      <h2>This Week</h2>
       <table>
         <thead>
           <tr>

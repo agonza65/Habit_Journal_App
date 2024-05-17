@@ -8,7 +8,7 @@ import { Reasons } from "../reasons/reasons";
 export const NewGoalPage = () => {
 	return (
 		<div>
-			<Header />
+			<Header className = 'GOALS' />
 			<Title />
 			<AddDescription />
 			<Reminder />
