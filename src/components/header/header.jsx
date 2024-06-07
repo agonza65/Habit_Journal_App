@@ -1,6 +1,6 @@
 //Header component
-export const Header = () => {
+export const Header = (prop) => {
 	return (
-		<div> Header </div>
+		<div> prop </div>
 	);
 }
