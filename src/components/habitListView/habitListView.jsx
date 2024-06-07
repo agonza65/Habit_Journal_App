@@ -1,4 +1,5 @@
-/*The page goes blank when I import db or anything from firebase.jsx file)
+/*
+The page goes blank when I import db or anything from firebase.jsx file)
 or use useEffect() 
 */
 
