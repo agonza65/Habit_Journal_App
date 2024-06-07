@@ -7,12 +7,6 @@ export const MainPage = () => {
     return (
         <div>
             <WeeklyCalendar />
-            <tbody> 
-                <th>Morning</th>
-                <th>Noon</th>
-                <th>Afternoon</th>
-                <th>Evening</th>
-            </tbody>
             <HabitListView />
 		</div>
     );
