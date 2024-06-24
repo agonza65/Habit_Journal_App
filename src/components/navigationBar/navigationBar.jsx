@@ -1,5 +1,4 @@
-import { useState } from "react";
-
+import "./NavigationBar.css";
 //Navigation Bar component
 export const NavigationBar = ({onPageChange,currentPage}) => {
 
@@ -12,30 +11,31 @@ export const NavigationBar = ({onPageChange,currentPage}) => {
 	return (
 		<div> 
 			<h2> {currentPage} </h2>
+			<div className = "navigationBar">
+				<button className = {currentPage === 'main' ? 'current' : ''}
+				onClick={()=> handleClick('main')}
+				>
+					Main Page
+				</button>
 
-			<button className = {currentPage === 'main' ? 'current' : ''} 
-			onClick={()=> handleClick('main')}
-			>
-				Main Page
-			</button>
+				<button className = {currentPage === 'goalpage' ? 'current' : ''}
+				onClick = {()=> handleClick('goalpage')}
+				>
+					Goal Page
+				</button>
 
-			<button className = {currentPage === 'goalpage' ? 'current' : ''}
-			onClick = {()=> handleClick('goalpage')}
-			>
-				Goal Page
-			</button>
+				<button className = {currentPage === 'journalpage' ? 'current' : ''}
+				onClick = {() => handleClick('journalpage')}
+				>
+					Journal Page
+				</button>
 
-			<button className = {currentPage === 'journalpage' ? 'current' : ''}
-			onClick = {() => handleClick('journalpage')}
-			>
-				Journal Page
-			</button>
-
-			<button className = {currentPage === 'progresspage' ? 'current' : ''}
-			onClick={()=> handleClick('progresspage')}
-			>
-				Progress Page
-			</button>
+				<button className = {currentPage === 'progresspage' ? 'current' : ''}
+				onClick={()=> handleClick('progresspage')}
+				>
+					Progress Page
+				</button>
+			</div>
 		</div>
 	);
 }
