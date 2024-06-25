@@ -67,16 +67,16 @@ const HabitListView = () => {
     <div>
       <h1>Habit List View</h1>
       <div className = "habits"> 
-      <ul>
-        {habits.map((habit) => (
-          <li key={habit.id}>{habit.title} {/* Replace `habit.name` with whatever field you want to display */}</li>
-          ))}
-       </ul>
-      <ul>
-        {habits.map((habit) => (
-          <li key={habit.id}>{habit.description} {/* Replace `habit.name` with whatever field you want to display */}</li>
-          ))}
-      </ul>
+        <ol>
+          {habits.map((habit) => (
+            <li key={habit.id}>{habit.title} {/* Replace `habit.name` with whatever field you want to display */}</li>
+            ))}
+        </ol>
+        <ol>
+          {habits.map((habit) => (
+            <li key={habit.id}>{habit.description}</li>
+            ))}
+        </ol>
       </div>
     </div>
   );
