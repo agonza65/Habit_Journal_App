@@ -5,12 +5,12 @@ or use useEffect()
 import React, { useState, useEffect } from 'react';
 import { db , auth } from "../firebase/firebase";
 import { setDoc, doc, getDocs, collection } from "firebase/firestore"; 
+import "./HabitListView.css";
 
 // Habit List View component
 const HabitListView = () => {
   // Step 1: Initialize state
   const [habits, setHabits] = useState([]);
-
 
   //add data
   async function addHabit(id, habit) {
@@ -66,11 +66,18 @@ const HabitListView = () => {
   return (
     <div>
       <h1>Habit List View</h1>
-      <ul>
-        {habits.map((habit) => (
-          <li key={habit.id}>{habit.title} {/* Replace `habit.name` with whatever field you want to display */}</li>
-        ))}
-      </ul>
+      <div className = "habits"> 
+        <ol>
+          {habits.map((habit) => (
+            <li key={habit.id}>{habit.title} {/* Replace `habit.name` with whatever field you want to display */}</li>
+            ))}
+        </ol>
+        <ol>
+          {habits.map((habit) => (
+            <li key={habit.id}>{habit.description}</li>
+            ))}
+        </ol>
+      </div>
     </div>
   );
 }

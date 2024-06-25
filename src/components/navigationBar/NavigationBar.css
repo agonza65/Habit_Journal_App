@@ -1,0 +1,10 @@
+/* 
+ Note: inline style is considered a bad practice, instead 
+ create a separate CSS file and import it into your React component
+ */
+
+.navigationBar {
+    background-color: rgb(134, 164, 116);
+    padding: 100px;
+    display: flexbox;
+ }
