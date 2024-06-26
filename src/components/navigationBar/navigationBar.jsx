@@ -11,29 +11,29 @@ export const NavigationBar = ({onPageChange,currentPage}) => {
 	return (
 		<div> 
 			<h2> {currentPage} </h2>
-			<div className = "navigationBar">
-				<button className = {currentPage === 'main' ? 'current' : ''}
-				onClick={()=> handleClick('main')}
-				>
-					Main Page
+			<div className="navigationBar">
+				<button className="navigationButton">
+					<div className = {currentPage === 'main' ? 'current' : ''} onClick={()=> handleClick('main')}> 
+						Main
+					</div>
 				</button>
 
-				<button className = {currentPage === 'goalpage' ? 'current' : ''}
-				onClick = {()=> handleClick('goalpage')}
-				>
-					Goal Page
+				<button className ="navigationButton">
+					<div className = {currentPage === 'goalpage' ? 'current' : ''} onClick = {()=> handleClick('goalpage')}> 
+						Goal 
+					</div>
 				</button>
 
-				<button className = {currentPage === 'journalpage' ? 'current' : ''}
-				onClick = {() => handleClick('journalpage')}
-				>
-					Journal Page
+				<button className = "navigationButton">
+					<div className = {currentPage === 'journalpage' ? 'current' : ''} onClick = {()=> handleClick('journalpage')}>
+						Journal
+					</div>
 				</button>
 
-				<button className = {currentPage === 'progresspage' ? 'current' : ''}
-				onClick={()=> handleClick('progresspage')}
-				>
-					Progress Page
+				<button className = "navigationButton">
+					<div className = {currentPage === 'progresspage' ? 'current' : ''} onClick={()=> handleClick('progresspage')}>
+						Progress
+					</div>				
 				</button>
 			</div>
 		</div>
