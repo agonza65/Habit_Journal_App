@@ -4,7 +4,26 @@
  */
 
 .navigationBar {
-    background-color: rgb(134, 164, 116);
-    padding: 100px;
-    display: flexbox;
+    height: 10vh;
+    background: rgb(134, 164, 116);
+    display: flex;
+    justify-content: center;
+    align-items: center;
  }
+
+ .navbar-logo{
+
+ }
+.navigationButton{
+    color: rgb(0, 0, 0);
+    background: rgb(222, 213, 203);
+    font-size: 1.2rem;
+    margin: auto;
+    transition: 0.3s all ease-out;
+    cursor: pointer;
+}
+
+.navigationButton:hover{
+    color: rgb(222, 213, 203);
+    background: rgb(0,0,0);
+}
