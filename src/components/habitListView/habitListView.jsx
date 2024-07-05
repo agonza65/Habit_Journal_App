@@ -7,6 +7,7 @@ import { db , auth } from "../firebase/firebase";
 import { setDoc, doc, getDocs, collection } from "firebase/firestore"; 
 import "./HabitListView.css";
 
+
 // Habit List View component
 const HabitListView = () => {
   // Step 1: Initialize state
@@ -77,6 +78,7 @@ const HabitListView = () => {
             <li key={habit.id}>{habit.description}</li>
             ))}
         </ol>
+        
       </div>
     </div>
   );
