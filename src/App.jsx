@@ -4,6 +4,7 @@ import { MainPage } from "./components/mainPage/mainPage";
 import { NavigationBar } from "./components/navigationBar/navigationBar";
 import { ProgressPage } from "./components/progressPage/progressPage";
 import { useState } from "react";
+import "./App.css";
 
 function App() {
   const [currentPage,setPage] = (useState('main'));

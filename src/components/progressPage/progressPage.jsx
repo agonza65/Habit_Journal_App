@@ -1,6 +1,6 @@
 import { NavigationBar } from "../navigationBar/navigationBar";
 import { Reports } from "../reports/reports";
-import { Tabs } from "../tabs/tabs";
+
 
 // Progress Page - shows the progess of goals 
 export const ProgressPage = () => {
