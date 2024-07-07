@@ -6,8 +6,7 @@ import React, { useState, useEffect } from 'react';
 import { db , auth } from "../firebase/firebase";
 import { setDoc, doc, getDocs, collection } from "firebase/firestore"; 
 import "./HabitListView.css";
-
-
+import { TiPencil, TiTrash } from "react-icons/ti";
 // Habit List View component
 const HabitListView = () => {
   // Step 1: Initialize state
@@ -66,20 +65,42 @@ const HabitListView = () => {
   // Step 3: Render habits
   return (
     <div>
-      <h1>Habit List View</h1>
-      <div className = "habits"> 
-        <ol>
-          {habits.map((habit) => (
-            <li key={habit.id}>{habit.title} {/* Replace `habit.name` with whatever field you want to display */}</li>
-            ))}
-        </ol>
-        <ol>
-          {habits.map((habit) => (
-            <li key={habit.id}>{habit.description}</li>
-            ))}
-        </ol>
-        
-      </div>
+      <h1>Habit List View </h1>
+
+      {/* Table data */}
+      <table > 
+        {/* header */}
+        <thead>
+          <tr>
+            <td>Title</td>
+            <td>Description</td>
+            <td>Action</td>
+          </tr>
+        </thead>
+
+        {/* body */}
+        <tbody>
+          <tr>
+            {/* Title */}
+            <td>
+              {habits.map((habit) => (
+              <li key={habit.id}>{habit.title}</li>
+              ))}
+            </td>
+            {/* Decsription */}
+            <td>
+              {habits.map((habit) => (
+              <li key={habit.id}>{habit.description}</li>
+              ))}
+            </td>
+            {/* Action */}
+            <td>
+                <TiPencil />
+                <TiTrash />
+            </td>    
+          </tr>  
+        </tbody>
+      </table>
     </div>
   );
 }
