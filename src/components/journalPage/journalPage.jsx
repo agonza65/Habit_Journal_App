@@ -66,20 +66,20 @@ export const JournalPage = () => {
 	  // Step 3: Render habits
 	  return (
 		<div>
-		  <h1>Journal Entry List</h1>
-	
-		  {/* Table data */}
-		  <table > 
+			<h1>Journal Entry List</h1>
+
+			{/* Table data */}
+			<table > 
 			{/* header */}
 			<thead>
-			  <tr>
+				<tr>
 				<td>Title</td>
 				<td>Date</td>
 				<td>Description</td>
 				<td>Action</td>
-			  </tr>
+				</tr>
 			</thead>
-	
+
 			{/* body */}
 			<tbody>
 				{entries.map((entry) => (
@@ -94,6 +94,7 @@ export const JournalPage = () => {
 					</tr>
 				))};
 			</tbody>
-		</table>
-	</div>;
+			</table>
+		</div>
+	  )
 };
