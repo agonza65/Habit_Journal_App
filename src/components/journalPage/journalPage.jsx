@@ -94,7 +94,6 @@ export const JournalPage = () => {
 					</tr>
 				))};
 			</tbody>
-		  </table>
-		</div>
-	  );
-	}
+		</table>
+	</div>;
+};
