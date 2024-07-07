@@ -1,12 +1,11 @@
-import { Button } from "../button/button";
+
 import { GoalView } from "../goalView/goalView";
-import { Header } from "../header/header";
 
 //Goal Page component
 export const GoalPage = () => {
 	return (
 		<div>
-			<header> List of Goals</header>
+			<h1> List of Goals</h1>
 				<GoalView />
 				<Button />
 		</div>
