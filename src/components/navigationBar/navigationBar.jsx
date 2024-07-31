@@ -1,41 +1,41 @@
 import "./NavigationBar.css";
-//Navigation Bar component
-export const NavigationBar = ({onPageChange,currentPage}) => {
+// Navigation Bar component
+export const NavigationBar = ({ onPageChange, currentPage }) => {
 
-	//Handle Click Function
-	const handleClick = (buttonClicked) => {
-		onPageChange(buttonClicked);
-		console.log(buttonClicked)
-	}
+    // Handle Click Function
+    const handleClick = (buttonClicked) => {
+        onPageChange(buttonClicked);
+        console.log(buttonClicked);
+    };
 
-	return (
-		<div> 
-			<h2> {currentPage} </h2>
-			<div className="navigationBar">
-				<button className="navigationButton">
-					<div className = {currentPage === 'main' ? 'current' : ''} onClick={()=> handleClick('main')}> 
-						Main
-					</div>
-				</button>
+    return (
+        <div>
+            <h2>{currentPage}</h2>
+            <div className="navigationBar">
+                <div className="navigationButton" onClick={() => handleClick('main')}>
+                    <span className={currentPage === 'main' ? 'current' : ''}>
+                        Main
+                    </span>
+                </div>
 
-				<button className ="navigationButton">
-					<div className = {currentPage === 'goalpage' ? 'current' : ''} onClick = {()=> handleClick('goalpage')}> 
-						Goal 
-					</div>
-				</button>
+                <div className="navigationButton" onClick={() => handleClick('goalpage')}>
+                    <span className={currentPage === 'goalpage' ? 'current' : ''}>
+                        Goal
+                    </span>
+                </div>
 
-				<button className = "navigationButton">
-					<div className = {currentPage === 'journalpage' ? 'current' : ''} onClick = {()=> handleClick('journalpage')}>
-						Journal
-					</div>
-				</button>
+                <div className="navigationButton" onClick={() => handleClick('journalpage')}>
+                    <span className={currentPage === 'journalpage' ? 'current' : ''}>
+                        Journal
+                    </span>
+                </div>
 
-				<button className = "navigationButton">
-					<div className = {currentPage === 'progresspage' ? 'current' : ''} onClick={()=> handleClick('progresspage')}>
-						Progress
-					</div>				
-				</button>
-			</div>
-		</div>
-	);
-}
+                <div className="navigationButton" onClick={() => handleClick('progresspage')}>
+                    <span className={currentPage === 'progresspage' ? 'current' : ''}>
+                        Progress
+                    </span>
+                </div>
+            </div>
+        </div>
+    );
+};

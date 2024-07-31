@@ -8,7 +8,7 @@ import { setDoc, doc, getDocs, collection } from "firebase/firestore";
 import "./HabitListView.css";
 import { TiPencil, TiTrash } from "react-icons/ti";
 // Habit List View component
-const HabitListView = () => {
+export const HabitListView = () => {
   // Step 1: Initialize state
   const [habits, setHabits] = useState([]);
 
@@ -105,4 +105,4 @@ const HabitListView = () => {
   );
 }
 
-export {HabitListView};
+export default {HabitListView};

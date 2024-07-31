@@ -7,7 +7,7 @@ export const GoalPage = () => {
 		<div>
 			<h1> List of Goals</h1>
 				<GoalView />
-				<Button />
+				<NavigationBar />
 		</div>
 	);
 }

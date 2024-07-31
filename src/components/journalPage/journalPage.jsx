@@ -4,6 +4,8 @@ import React, { useState, useEffect } from 'react';
 import { db , auth } from "../firebase/firebase";
 import { setDoc, doc, getDocs, collection } from "firebase/firestore"; 
 import { TiPencil, TiTrash } from "react-icons/ti";
+import "./jTable.css";
+import Modal from "../modal/modal";
 
 export const JournalPage = () => {
 
@@ -16,7 +18,7 @@ export const JournalPage = () => {
 		addEntry('entry1',{
 			title: "Morning Walk",
 			date:"05-01,2024",
-			description: "Today, I started my day with a refreshing 20-minute walk in the park. The weather was perfect, and the fresh air invigorated my senses. I felt a sense of peace and clarity that lasted throughout the day. This habit is really helping me clear my mind and stay active.",
+			description: " Today, I started my day with a refreshing 20-minute walk in the park. The weather was perfect, and the fresh air invigorated my senses. I felt a sense of peace and clarity that lasted throughout the day. This habit is really helping me clear my mind and stay active. After my walk, I had a healthy breakfast of oatmeal and fresh fruit, which gave me the energy I needed for the day ahead. I spent some time reading a book I've been enjoying, which added to my sense of calm and focus. The story was captivating, and it felt good to immerse myself in it. In the afternoon, I tackled some work tasks and felt productive and motivated. I managed to complete a project I've been working on for a while, which gave me a great sense of accomplishment. During my lunch break, I tried a new recipe and made a delicious quinoa salad, packed with vegetables and a tangy lemon dressing. Later in the day, I took a short break to practice some mindfulness meditation, which helped me recharge and stay focused for the rest of the afternoon. I also had a virtual meeting with a friend, catching up and sharing laughs, which brightened my day even more. In the evening, I went for another short walk to enjoy the sunset, reflecting on the day's events and feeling grateful for the little moments of joy and peace. Before bed, I did some gentle stretching and listened to some relaxing music, which helped me wind down and prepare for a restful night’s sleep. Overall, it was a fulfilling and balanced day, filled with activities that nurtured my mind, body, and soul. a refreshing 20-minute walk in the park. The weather was perfect, and the fresh air invigorated my senses. I felt a sense of peace and clarity that lasted throughout the day. This habit is really helping me clear my mind and stay active.",
 			mood: "Refreshed"
 		});
 		addEntry('entry2',{
@@ -66,35 +68,36 @@ export const JournalPage = () => {
 	  // Step 3: Render habits
 	  return (
 		<div>
-			<h1>Journal Entry List</h1>
+			<div className="table-wrapper">
+				<h1>Journal Entry List</h1>
+				{/* Table data */}
+				<table className="table"> 
+					<thead>
+						<tr>
+							<td>Title</td>
+							<td>Date</td>
+							<td>Description</td>
+							<td>Action</td>
+						</tr>
+					</thead>
 
-			{/* Table data */}
-			<table > 
-			{/* header */}
-			<thead>
-				<tr>
-				<td>Title</td>
-				<td>Date</td>
-				<td>Description</td>
-				<td>Action</td>
-				</tr>
-			</thead>
-
-			{/* body */}
-			<tbody>
-				{entries.map((entry) => (
-					<tr key={entry.id}> 
-						<td> {entry.title}</td>
-						<td> {entry.date}</td>
-						<td>{entry.description}</td>
-						<td>
-						<TiPencil />
-						<TiTrash />
-						</td>
-					</tr>
-				))};
-			</tbody>
-			</table>
+					{/* body */}
+					<tbody>
+						{entries.map((entry) => (
+							<tr key={entry.id} > 
+								<td> {entry.title}</td>
+								<td> {entry.date}</td>
+								<td>{entry.description}</td>
+								<td>
+									<Modal/>
+									<TiTrash />
+								</td>
+							</tr>
+						))}
+					</tbody>
+				</table>
+			</div>
+			<Modal />
 		</div>
 	  )
 };
