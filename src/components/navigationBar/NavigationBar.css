@@ -5,21 +5,23 @@
 
 .navigationBar {
     height: 10vh;
-    background: rgb(148, 137, 121);
+    background: #ffffff;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    
+    position: fixed; /* This makes it stick to the top */
+    top: 0; /* Position it at the top */
+    width: 100%; /* Make it span the full width of the screen */
+    z-index: 1000; /*Ensure it stays above other elements */
  }
 
  
 .navigationButton{
     color: rgb(21, 52, 72);
-    background: rgb(223, 208, 184);
     font-size: 1.2rem;
-    margin: auto;
-    transition: 0.3s all ease-out;
+    margin: 0 15px; /* Adjust spacing between items */
     cursor: pointer;
+    transition: 0.3s all ease-out;
 }
 
 .navigationButton:hover{
